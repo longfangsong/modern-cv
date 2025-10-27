@@ -842,7 +842,7 @@
   }
 
   let signature = {
-    align(bottom)[
+    align(left)[
       #pad(bottom: 2em)[
         #if ("signature" in author) {
           author.signature
