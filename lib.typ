@@ -754,25 +754,25 @@
     if ("phone" in author) {
       author_list.push[
         #phone-icon
-        #box[#link("tel:" + author.phone)[#author.phone]]
+        #box(height: 7pt)[#link("tel:" + author.phone)[#author.phone]]
       ]
     }
     if ("email" in author) {
       author_list.push[
         #email-icon
-        #box[#link("mailto:" + author.email)[#author.email]]
+        #box(height: 7pt)[#link("mailto:" + author.email)[#author.email]]
       ]
     }
     if ("github" in author) {
       author_list.push[
         #github-icon
-        #box[#link("https://github.com/" + author.github)[#author.github]]
+        #box(height: 7pt)[#link("https://github.com/" + author.github)[#author.github]]
       ]
     }
     if ("linkedin" in author) {
       author_list.push[
         #linkedin-icon
-        #box[
+        #box(height: 7pt)[
           #link(
             "https://www.linkedin.com/in/" + author.linkedin,
           )[#author.firstname #author.lastname]
@@ -782,13 +782,13 @@
     if ("orcid" in author) {
       author_list.push[
         #orcid-icon
-        #box[#link("https://orcid.org/" + author.orcid)[#author.orcid]]
+        #box(height: 7pt)[#link("https://orcid.org/" + author.orcid)[#author.orcid]]
       ]
     }
     if ("website" in author) {
       author_list.push[
         #website-icon
-        #box[#link(author.website)[#author.website]]
+        #box(height: 7pt)[#link(author.website)[#author.website]]
       ]
     }
 
@@ -799,7 +799,7 @@
             #if ("icon" in item) [
               #box(fa-icon(item.icon, fill: color-darknight))
             ]
-            #box[
+            #box(height: 7pt)[
               #if ("link" in item) [
                 #link(item.link)[#item.text]
               ] else [
@@ -904,7 +904,7 @@
       ) #job-position]
   ]
   pad(top: 1em, bottom: 1em)[
-    #text(weight: "light", fill: color-gray)[
+    #text(weight: "regular", fill: color-gray)[
       #if dear == "" [
         #linguify("dear", from: lang_data)
       ] else [
