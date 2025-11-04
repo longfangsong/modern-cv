@@ -850,7 +850,7 @@
         #text(weight: "light")[#linguify("sincerely", from: lang_data)#if (
             language != "de"
           ) [#sym.comma]] \
-        #text(weight: "bold")[#author.firstname #author.lastname] \ \
+        #text(style: "italic")[#author.firstname #author.lastname] \ \
       ]
     ]
   }
@@ -920,7 +920,7 @@
 #let coverletter-content(content) = {
   pad(top: 1em, bottom: 1em)[
     #set par(first-line-indent: 3em)
-    #set text(weight: "light")
+    #set text(weight: "regular")
     #content
   ]
 }
